@@ -23,3 +23,26 @@ class Object:
 
     def run_sprite(self, screen, is_draw, is_update):
         pass
+
+
+# Class that manages any playable character in game
+class Player(Object):
+    def __init__(self, lifetime, z_order, tags):
+        super().__init__(lifetime, z_order, tags)
+
+
+# Class that implements user controls to the Player class
+class UserPlayer(Player):
+    def __init__(self, lifetime, z_order, tags):
+        super().__init__(lifetime, z_order, tags)
+
+
+# Class that implements AI Controls to the Player class
+class AIPlayer(Player):
+    def __init__(self, lifetime, z_order, tags):
+        super().__init__(lifetime, z_order, tags)
+
+
+class Chair(Object):
+    def __init__(self, lifetime, z_order, tags):
+        super().__init__(lifetime, z_order, tags)
