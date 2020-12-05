@@ -5,10 +5,8 @@ pygame.init()
 
 screen = pygame.display.set_mode(Constants.SCREEN_SIZE, pygame.DOUBLEBUF)
 
-running = True
-
 # Main game loop
-while running:
+while Globe.running:
     screen.fill((100, 100, 100))
 
     Globe.events = pygame.event.get()
