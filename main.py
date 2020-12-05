@@ -12,4 +12,8 @@ while running:
 
     Globe.events = pygame.event.get()
 
+    for event in Globe.events:
+        if event.type == pygame.QUIT:
+            running = False
+
     pygame.display.update()
